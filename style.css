@@ -1,0 +1,46 @@
+/* Reset default styles for HTML and body */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+
+#main {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  position: relative;
+}
+
+.elem {
+  height: 100px;
+  width: 100%;
+  border-bottom: 2px solid #fff;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  position: relative;
+}
+
+.elem h1 {
+  font-size: 4vw;
+  position: relative;
+  z-index: 9;
+  mix-blend-mode: difference;
+}
+
+.elem img {
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+  position: absolute;
+  opacity: 0;
+  mix-blend-mode: difference;
+  /* transform: translate(-50%, -50%);*/
+  transition: all linear 0.2s;
+}
